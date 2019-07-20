@@ -85,7 +85,7 @@ def main(run, data_path, output_path, log_path, layer_width, batch_size, epochs,
     ])
 
     # how to optimize the function
-    model.compile(optimizer=Adam(learning_rate=0.001),
+    model.compile(optimizer=Adam(learning_rate=learning_rate),
                 loss='sparse_categorical_crossentropy',
                 metrics=['accuracy'])
 
